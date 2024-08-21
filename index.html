@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex. - Location de voitures haut de gamme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="corpsDePage.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="caroussel.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <h1>Flex.</h1>
+            <nav class="tabs">
+                <ul>
+                    <li class="dropdown-container">
+                        <a href="#tab1">Nos voitures</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Porsche</a></li>
+                            <li><a href="#">Lamborghini</a></li>
+                            <li><a href="#">Aston Martin</a></li>
+                            <li><a href="#">Ferrari</a></li>
+                            <li><a href="#">Audi</a></li>
+                            <li><a href="#">Rolls Royce</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#tab2">Contact</a></li>
+                    <li><a href="#tab3">A propos</a></li>
+                    <li><a href="#tab4">L'équipe</a></li> 
+                    <li><a href="#tab5"class="connexion-btn">Connexion</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <h2>Notre coup de coeur.</h2>
+        </section>
+
+        <section class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Porsche.jpg" alt="Porsche Targa 4 GTS">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Porsche-05-scaled.jpg" alt="Porsche 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Porsche 3.jpg" alt="Porsche 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Porsche-06.jpg" alt="Porsche 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Porsche-07.jpg" alt="Porsche 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Porsche-04.jpg" alt="Porsche 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Porsche-8.jpg" alt="Porsche 6">
+                </div>
+            </div>
+            <div class="carousel-control-prev carousel-control"></div>
+            <div class="carousel-control-next carousel-control"></div>
+        </section>
+              
+    <section class="description">
+        <button id="toggleDescription">En savoir plus</button>
+             <p id="text-container" class="hidden">
+                    La Porsche Targa 4 GTS est la voiture de choix pour les passionnés de conduite quotidienne. Dotée d'un moteur six cylindres à plat de 430 chevaux, elle offre une expérience de conduite dynamique grâce à son châssis sportif et à sa transmission intégrale. La direction et la suspension rigides, associées à une boîte de vitesses PDK à sept rapports parfaitement réglée, garantissent un contrôle absolu sur la route. Avec son design emblématique et sa polyvalence, la Targa 4 GTS incarne l'esprit de la 911 : rapide, agile et incomparable.
+             </p>
+    </section>
+    
+        <section class="car-selection-container">
+            <div class="car-selection">
+                <div class="box">
+                    <img src="images/Bentley BENTAYGA.webp" alt="Bentley Bentayga">
+                    <p>Le compromis à l'anglaise, élégante et sportive</p>
+                    <button class="reserve-button">Réserver</button>
+                </div>
+                <div class="box">
+                    <img src="images/GT3 TOURING.webp" alt="GT3 Touring">
+                    <p>La performance discrète.</p>
+                    <button class="reserve-button">Réserver</button>
+                </div>
+                <div class="box">
+                    <img src="images/GT3.webp" alt="GT3">
+                    <p>L'efficacité à l'état pur.</p>
+                    <button class="reserve-button">Réserver</button>
+                </div>
+                <div class="box">
+                    <img src="images/Porsche 718 Boxter.webp" alt="Porsche 718 Boxter">
+                    <p>Le cabriolet sportif qu'on ne présente plus.</p>
+                    <button class="reserve-button">Réserver</button>
+                </div>
+                <div class="box">
+                    <img src="images/m2.png" alt="BMW M2">
+                    <p>La petite bombe.</p>
+                    <button class="reserve-button">Réserver</button>
+                </div>
+                <div class="box">
+                    <img src="images/urus.png" alt="Lamborghini Urus">
+                    <p>L'âme d'une supersportive alliée à la praticité d'un SUV.</p>
+                    <button class="reserve-button">Réserver</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <H1 id="titre">Inscrivez-vous à notre newsletter !</H1>
+        <div class="newsletter">
+            <input type="email" placeholder="Entrez votre email" class="newsletter-input">
+            <button class="newsletter-button">Je m'inscris</button>
+        </div>
+        <p id="copyright">&copy; Flex. - Tous droits réservés.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

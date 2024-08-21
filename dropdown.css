@@ -1,0 +1,44 @@
+/* Dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -30px; /* Ajustez cette valeur pour décaler le dropdown horizontalement */
+    background-color: #000000; /* Fond noir */
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    flex-direction: column; /* Ensure vertical display */
+    transform: translateY(-10px);
+    padding: 10px 15px; /* Adjust padding to recenter the dropdown */
+    margin-top: 5px; /* Adjust margin to add space above the dropdown */
+    border-radius: 10px; /* Bords arrondis */
+}
+
+/* When the dropdown is active */
+.dropdown.active {
+    display: flex; /* Changed from block to flex */
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0); /* Smooth transition */
+}
+
+/* Dropdown List Items */
+.dropdown li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: var(--dropdown-hover-bg-color);
+}

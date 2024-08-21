@@ -1,0 +1,35 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #000000;
+    --text-color: white;
+    --banner-bg-color: black;
+    --dropdown-bg-color: #333;
+    --dropdown-hover-bg-color: #111;
+    --button-bg-color: white;
+    --button-text-color: black;
+    --button-hover-scale: 1.05;
+    --border-radius: 5px;
+    --font-family: Arial, sans-serif;
+}
+
+/* Importation des fichiers de composants */
+@import 'components/banner.css';
+@import 'components/dropdown.css';
+@import 'components/corpsDePage.css';
+@import 'components/footer.css';
+@import 'components/caroussel.css';
+
+/* Corps de la page */
+body {
+    background-color: var(--main-bg-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
